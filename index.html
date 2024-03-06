@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./hero/hero.css" />
-    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./nav/nav.css" />
     <link rel="stylesheet" href="./footer.css" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./slider_brand/slider_brand.css" />
@@ -21,6 +21,7 @@
 
 <body>
     <header>
+        <div class="black-block text-white">blackbox</div>
         <nav>
             <div class="nav-wrapper">
                 <div class="logo">
@@ -68,13 +69,21 @@
                         </ul>
                     </div>
                     <div class="dropdown">
-                        <button class="btn dropdown-toggle .btn-nav " type="button" data-bs-toggle="dropdown"
+                        <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown"
                             aria-expanded="false"> Japan </button>
                         <ul class="dropdown-menu">
                             <li><button class="dropdown-item" type="button">Action</button></li>
                             <li><button class="dropdown-item" type="button">Another action</button></li>
                             <li><button class="dropdown-item" type="button">Something else here</button></li>
                         </ul>
+                    </div>
+                    <div class="">
+                        <button class="btn" type="button">
+                            <a href="./contact.html">Contact</a>
+                        </button>
+                    </div>
+                    <div class="">
+                        <button class="btn " type="button">About Us</button>
                     </div>
                     <div class="search">
                         <svg class="search-menu-open-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -84,7 +93,38 @@
                         </svg>
                     </div>
                 </div>
-                <div class="location"> location </div>
+                <div class="location">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle text-small" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"> Change Location </button>
+                        <ul class="dropdown-menu change-location-menu">
+                            <li><button class="dropdown-item" type="button">Nepal</button>
+                                <img src="./logos/nepal_flag.webp" alt="" class=" country-flag">
+                            </li>
+                            <li><button class="dropdown-item" type="button">Bhutan</button>
+                                <img src="./logos/bhutan_flag.webp" alt="" class="country-flag">
+                            </li>
+                            <li><button class="dropdown-item" type="button">China/Tibet</button>
+                                <img src="./logos/china_flag.webp" alt="" class="country-flag">
+                            </li>
+                            <li><button class="dropdown-item" type="button">Japan </button>
+                                <img src="./logos/japan_flag.webp" alt="" class="country-flag">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-ph-number" id="nepal-ph">
+                        <img src="./logos/nepal_flag.webp" alt="" class=" country-flag"> +977 98********
+                    </div>
+                    <div class="location-ph-number" id="bhutan-ph">
+                        <img src="./logos/bhutan_flag.webp" alt="" class=" country-flag"> +975 bhutan-ph
+                    </div>
+                    <div class="location-ph-number" id="china-ph">
+                        <img src="./logos/china_flag.webp" alt="" class=" country-flag"> +86 china-ph
+                    </div>
+                    <div class="location-ph-number" id="japan-ph">
+                        <img src="./logos/japan_flag.webp" alt="" class=" country-flag"> +81 japan-ph
+                    </div>
+                </div>
                 <div class="small-device-menu">
                     <div class="search">
                         <svg class="search-menu-open-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -112,14 +152,13 @@
                         <!-- <div class="alert alert-info d-none d-lg-block">Resize your browser to show the responsive offcanvas
                             toggle.</div> -->
                         <div class="offcanvas-lg offcanvas-end" style="width: 100vw;
-                        
                         background-color: rgba(0, 0, 0, 0.418);
                         -webkit-backdrop-filter: blur(5px);
                         backdrop-filter: blur(5px);
                         " tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">
-                                    <button type="button" class="btn " data-bs-dismiss="offcanvas"
+                                    <button type="button" class="btn" style="color: white;" data-bs-dismiss="offcanvas"
                                         data-bs-target="#offcanvasResponsive" aria-label="Close">Back</button>
                                 </h5>
                                 <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"
@@ -226,6 +265,41 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive"> Contact </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body  accordion-body-contact ">
+                                                <div class="location-ph-number">
+                                                    <img src="./logos/nepal_flag.webp" alt="" class=" country-flag">
+                                                    +977 98********
+                                                </div>
+                                                <div class="location-ph-number">
+                                                    <img src="./logos/bhutan_flag.webp" alt="" class=" country-flag">
+                                                    +975 bhutan-ph
+                                                </div>
+                                                <div class="location-ph-number">
+                                                    <img src="./logos/china_flag.webp" alt="" class=" country-flag"> +86
+                                                    china-ph
+                                                </div>
+                                                <div class="location-ph-number">
+                                                    <img src="./logos/japan_flag.webp" alt="" class=" country-flag"> +81
+                                                    japan-ph
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                aria-expanded="false" aria-controls="collapseSix"> About Us </button>
+                                        </h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -276,12 +350,11 @@
                 <img src="image/img1.jpg" />
                 <!-- <video src="./videos/nepal.mp4" autoplay loop muted></video> -->
                 <div class="content">
-                    <div class="title">COUNTRY</div>
-                    <div class="topic">NEPAL</div>
-                    <div class="des">
-                        <!-- lorem 50 --> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam
-                        nesciunt minima placeat, itaque eum neque officiis unde,
-                    </div>
+                    <div class="title">NEPAL</div>
+                    <div class="topic">Roof of the world, heart of adventure</div>
+                    <div class="des"> Nepal is a landlock country located in South Aisa, bordered by China to the north
+                        and Inida to the south, east, and west. It is known for its stunning Himalayan landscapes,
+                        including Mount Everest, the highest peak in the world. </div>
                     <div class="buttons">
                         <button><a href="#">Book Now</a></button>
                     </div>
@@ -291,10 +364,10 @@
                 <img src="image/img2.jpg" />
                 <!-- <video src="./videos/bhutan.mp4" autoplay loop muted></video> -->
                 <div class="content">
-                    <div class="title">COUNTRY</div>
-                    <div class="topic">BHUTAN</div>
-                    <div class="des"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam
-                        nesciunt minima placeat, itaque eum neque officiis unde, </div>
+                    <div class="title">BHUTAN</div>
+                    <div class="topic">Bhutan, land of happiness</div>
+                    <div class="des"> Bhutan is a small landlocked country located in the Eastern Himalayas in South
+                        Asis, bordered by China to the north and Inida to the south, east, and west. </div>
                     <div class="buttons">
                         <button><a href="#">Book Now</a></button>
                     </div>
@@ -304,10 +377,10 @@
                 <img src="image/img3.jpg" />
                 <!-- <video src="./videos/china.mp4" autoplay loop muted></video> -->
                 <div class="content">
-                    <div class="title">COUNTRY</div>
-                    <div class="topic">CHINA/TIBET</div>
-                    <div class="des"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam
-                        nesciunt minima placeat, itaque eum neque officiis unde, </div>
+                    <div class="title">CHINA/TIBET</div>
+                    <div class="topic">The ultimate China experience</div>
+                    <div class="des"> China, officially known as the People's Republic of China (PRC), is a vast country
+                        located in East Asia.</div>
                     <div class="buttons">
                         <button><a href="#">Book Now</a></button>
                     </div>
@@ -317,10 +390,11 @@
                 <img src="image/img4.jpg" />
                 <!-- <video src="./videos/japan.mp4" autoplay loop muted></video> -->
                 <div class="content">
-                    <div class="title">COUNTRY</div>
-                    <div class="topic">JAPAN</div>
-                    <div class="des"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam
-                        nesciunt minima placeat, itaque eum neque officiis unde, </div>
+                    <div class="title">JAPAN</div>
+                    <div class="topic">Experience the wonders of Japan</div>
+                    <div class="des"> Japan offers a diverse range of attractions, from bustling cities like Tokyo and
+                        Kyoto to serene rural landscapes and natural wonders like Mount Fuji and the Japanese Alps.
+                    </div>
                     <div class="buttons">
                         <button><a href="#">Book Now</a></button>
                     </div>
@@ -390,7 +464,7 @@
     <img src="./image/banner.webp" alt="Image Not Found" class="banner">
     <!-- banner ends -->
     <br />
-    <hr style="border: none; height: 1px; background-color: #33333370; margin: 20px 0;">
+    <hr class="hr">
     <!-- brands start -->
     <div class="centered" style="margin-top: 60px;">
         <p class="heading">As Seen In</p>
@@ -501,7 +575,7 @@
         </ul>
     </div>
     <!-- image grid start -->
-    <hr style="border: none; height: 1px; background-color: #33333370; margin-bottom: 70px; margin-top: 70px; ">
+    <hr class="hr">
     <!-- brand and image grid start -->
     <div class="star-text-container" id="brand-text" style="margin-bottom: 70px;">
         <p class="star-text">Join us, and let Exodus be ‘Your Guide to Adventure’</p>
@@ -724,12 +798,97 @@
         </div>
     </div>
     <!-- image slider end -->
+    <!-- featured blogs -->
+    <div class="star-text-container" id="brand-text">
+        <p class="star-text">Featured Blogs</p>
+    </div>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="./image/img4.jpg" alt="blog-img" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p class="description large-text">The lorem text the section that contains header with having
+                            open functionality. </p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="./image/img1.jpg" alt="blog-img" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p class="description large-text">The lorem text the section that contains header with having
+                            open functionality. </p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="./image/img2.jpg" alt="blog-img" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p class="description large-text">The lorem text the section that contains header with having
+                            open functionality. </p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="./image/img3.jpg" alt="blog-img" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p class="description large-text">The lorem text the section that contains header with having
+                            open functionality. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- featured blogs ends-->
+    <!-- banner start -->
+    <img src="./image/banner.webp" alt="Image Not Found" class="banner">
+    <!-- banner ends -->
+    <hr class="hr">
+    <!-- quick contact  -->
+    <div class="quick-contact">
+        <div class="call-us">
+            <img src="./icons/phone.gif" class="quick-contact-icon" alt="call icon">
+            <strong class="quick-contact-head">Call us anytime</strong>
+            <small class="quick-contact-des">Contact Number</small>
+        </div>
+        <div class="message-us">
+            <img src="./icons/message.gif" class="quick-contact-icon" alt="message icon">
+            <strong class="quick-contact-head">Send us a message</strong>
+            <small class="quick-contact-des">Contact Now</small>
+        </div>
+        <div class="chat-with-us">
+            <img src="./icons/bubble-chat.gif" class="quick-contact-icon" alt="chat icon">
+            <strong class="quick-contact-head">Chat with us now</strong>
+            <small class="quick-contact-des">Get Started</small>
+        </div>
+    </div>
+    <!-- quick contact ends -->
     <!-- footer -->
     <footer>
         <div class="footer-wrapper">
             <section class="sec-1">
                 <div class="first-sec-1">
-                    <div class="links"><a href="">CONTACT US</a></div>
+                    <div class="links"><a href="/contact.html">CONTACT US</a></div>
                     <div class="links"><a href="">REQUEST A BROCHURE</a></div>
                     <div class="links"><a href="">ABOUT EXODUS</a></div>
                     <div class="links"><a href="">OUR TRIPS</a></div>
@@ -740,7 +899,7 @@
                     <div class="links"><a href="">CAREERS</a></div>
                 </div>
             </section>
-            <hr />
+            <hr>
             <section class="sec-2">
                 <div class="first-sec-2">
                     <div class="sub-sec">
@@ -773,7 +932,7 @@
                     </div>
                 </div>
             </section>
-            <hr />
+            <hr>
             <section class="sec-3">
                 <div class="social-links">
                     <div class="links">
@@ -786,11 +945,11 @@
                     <div class="copyright">© 2024 Exodus Travels Limited. All rights reserved.</div>
                 </div>
                 <div class="associations">
-                    <img class="ass-img" src="./images/logo.webp" alt="not found">
-                    <img class="ass-img" src="./images/logo.webp" alt="not found">
-                    <img class="ass-img" src="./images/logo.webp" alt="not found">
-                    <img class="ass-img" src="./images/logo.webp" alt="not found">
-                    <img class="ass-img" src="./images/logo.webp" alt="not found">
+                    <img class="ass-img" src="./logos/nepal_gov.png" alt="not found">
+                    <img class="ass-img" src="./logos/nma.png" alt="not found">
+                    <img class="ass-img" src="./logos/ntb.webp" alt="not found">
+                    <img class="ass-img" src="./logos/taan-logo.jpg" alt="not found">
+                    <img class="ass-img" src="./logos/trip_adv.png" alt="not found">
                 </div>
                 <div class="copyright-2">© 2024 Exodus Travels Limited. All rights reserved. </div>
             </section>
@@ -799,7 +958,7 @@
     <!-- footer end  -->
     <script src="./hero/hero.js"></script>
     <script src="./index.js"></script>
-    <script src="./nav.js"></script>
+    <script src="./nav/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

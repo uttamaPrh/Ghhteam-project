@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Responsive Two Column Layout (Left Column Fluid)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./contact/contact.css">
+  <link rel="stylesheet" href="./nav/nav.css" />
+  <link rel="stylesheet" href="./footer.css" />
+</head>
+
+<body>
+  <!-- nav  -->
+  <header>
+    <div class="black-block text-white">blackbox</div>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./image/logo.webp" alt="logo ">
+          </a>
+        </div>
+        <div class="menu">
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Nepal
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button">Trekking in Nepal</button></li>
+              <li><button class="dropdown-item" type="button">Climbing and Expedition</button></li>
+              <li><button class="dropdown-item" type="button">Cultural Tour and Mountain Biking</button>
+              </li>
+              <li><button class="dropdown-item" type="button">Luxury Treks</button>
+              </li>
+              <li><button class="dropdown-item" type="button">Luxury Tours</button>
+              </li>
+              <li><button class="dropdown-item" type="button">Day Trips</button>
+              </li>
+              <li><button class="dropdown-item" type="button">Multi Country Tours</button>
+              </li>
+              <li><button class="dropdown-item" type="button">Voluntourism Trips</button>
+              </li>
+              <li><button class="dropdown-item" type="button">Extend Your Trip</button>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn .btn-nav dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bhutan </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn .btn-nav dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              China / Tibet </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false"> Japan
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            </ul>
+          </div>
+          <div class="">
+            <button class="btn" type="button">
+              <a href="./contact.html">Contact</a>
+            </button>
+          </div>
+          <div class="">
+            <button class="btn " type="button">About Us</button>
+          </div>
+          <div class="search">
+            <svg class="search-menu-open-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+          </div>
+        </div>
+        <div class="location">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle text-small" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false"> Change Location </button>
+            <ul class="dropdown-menu change-location-menu">
+              <li><button class="dropdown-item" type="button">Nepal</button>
+                <img src="./logos/nepal_flag.webp" alt="" class=" country-flag">
+              </li>
+              <li><button class="dropdown-item" type="button">Bhutan</button>
+                <img src="./logos/bhutan_flag.webp" alt="" class="country-flag">
+              </li>
+              <li><button class="dropdown-item" type="button">China/Tibet</button>
+                <img src="./logos/china_flag.webp" alt="" class="country-flag">
+              </li>
+              <li><button class="dropdown-item" type="button">Japan </button>
+                <img src="./logos/japan_flag.webp" alt="" class="country-flag">
+              </li>
+            </ul>
+          </div>
+          <div class="location-ph-number" id="nepal-ph">
+            <img src="./logos/nepal_flag.webp" alt="" class=" country-flag"> +977 98********
+          </div>
+          <div class="location-ph-number" id="bhutan-ph">
+            <img src="./logos/bhutan_flag.webp" alt="" class=" country-flag"> +975 bhutan-ph
+          </div>
+          <div class="location-ph-number" id="china-ph">
+            <img src="./logos/china_flag.webp" alt="" class=" country-flag"> +86 china-ph
+          </div>
+          <div class="location-ph-number" id="japan-ph">
+            <img src="./logos/japan_flag.webp" alt="" class=" country-flag"> +81 japan-ph
+          </div>
+        </div>
+        <div class="small-device-menu">
+          <div class="search">
+            <svg class="search-menu-open-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+          </div>
+          <div class="whatsapp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+              viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+            </svg>
+          </div>
+          <div class="hamburger-menu">
+            <button class="btn  d-lg-none" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+                <path
+                  d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+              </svg>
+            </button>
+            <!-- <div class="alert alert-info d-none d-lg-block">Resize your browser to show the responsive offcanvas
+                        toggle.</div> -->
+            <div class="offcanvas-lg offcanvas-end" style="width: 100vw;
+                    background-color: rgba(0, 0, 0, 0.418);
+                    -webkit-backdrop-filter: blur(5px);
+                    backdrop-filter: blur(5px);
+                    " tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">
+                  <button type="button" class="btn" style="color: white;" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close">Back</button>
+                </h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"
+                  data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Nepal </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <ul>
+                          <li><button class="dropdown-item" type="button">Trekking in Nepal</button></li>
+                          <li><button class="dropdown-item" type="button">Climbing and Expedition</button></li>
+                          <li><button class="dropdown-item" type="button">Cultural Tour and Mountain Biking</button>
+                          </li>
+                          <li><button class="dropdown-item" type="button">Luxury Treks</button>
+                          </li>
+                          <li><button class="dropdown-item" type="button">Luxury Tours</button>
+                          </li>
+                          <li><button class="dropdown-item" type="button">Day Trips</button>
+                          </li>
+                          <li><button class="dropdown-item" type="button">Multi Country Tours</button>
+                          </li>
+                          <li><button class="dropdown-item" type="button">Voluntourism Trips</button>
+                          </li>
+                          <li><button class="dropdown-item" type="button">Extend Your Trip</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Bhutan
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> China/Tibet
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Japan
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> Contact
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body  accordion-body-contact ">
+                        <div class="location-ph-number">
+                          <img src="./logos/nepal_flag.webp" alt="" class=" country-flag"> +977 98********
+                        </div>
+                        <div class="location-ph-number">
+                          <img src="./logos/bhutan_flag.webp" alt="" class=" country-flag"> +975 bhutan-ph
+                        </div>
+                        <div class="location-ph-number">
+                          <img src="./logos/china_flag.webp" alt="" class=" country-flag"> +86 china-ph
+                        </div>
+                        <div class="location-ph-number">
+                          <img src="./logos/japan_flag.webp" alt="" class=" country-flag"> +81 japan-ph
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> About Us
+                      </button>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="search-menu" class="search-menu-wrapper">
+        <div class="inputs">
+          <div class="input ">
+            <label for="destination">Find an Adventure</label>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          </div>
+          <div class="input">
+            <label for="activity">activity</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="input">
+            <label for="departure">departure month</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="input"></div>
+        </div>
+        <div class="search-btn">
+          <button class="btn btn-primary">Search</button>
+          <svg id="search-menu-close-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- nav ends -->
+  <div class="contact-body">
+    <div class="wrapper">
+      <div class="card-contents"><img src="/image/img1.jpg" /><img src="/image/img2.jpg" /><img
+          src="/image/img3.jpg" /><img src="/image/img4.jpg" />
+        <div class="card-description">
+          <h1>About Us</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <p class="abouttext">We want to make sure that we can help you to find the perfect adventure holiday. If you have any
+    questions about anything, please get in touch with one of our experts using our Contact Form or by simply calling
+    us. You can also find the answer to our most commonly asked questions</p>
+  <div class="columnsContainer">
+    <div class="leftColumn">
+      <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+          <form action="#" method="POST">
+            <div class="formbold-mb-5">
+              <label for="name" class="formbold-form-label"> Full Name </label>
+              <input type="text" name="name" id="name" placeholder="Full Name" required class="formbold-form-input" />
+            </div>
+            <div class="formbold-mb-5">
+              <label for="phone" class="formbold-form-label"> Phone Number </label>
+              <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
+                class="formbold-form-input" required />
+            </div>
+            <div class="formbold-mb-5">
+              <label for="email" class="formbold-form-label"> Email Address </label>
+              <input type="email" name="email" id="email" required placeholder="Enter your email"
+                class="formbold-form-input" />
+            </div>
+            <div class="formbold-mb-5 formbold-pt-3">
+              <label class="formbold-form-label formbold-form-label-2"> Address Details </label>
+              <div class="flex flex-wrap formbold--mx-3">
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input type="text" name="area" id="area" required placeholder="Enter area"
+                      class="formbold-form-input" />
+                  </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input type="text" name="city" id="city" required placeholder="Enter city"
+                      class="formbold-form-input" />
+                  </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input type="text" name="state" id="state" required placeholder="Enter state"
+                      class="formbold-form-input" />
+                  </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input type="text" name="post-code" required id="post-code" placeholder="Post Code"
+                      class="formbold-form-input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="formbold-btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="rightColumn">
+      <h2>Right Column</h2>
+      <p class="left-col-element">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In laudantium temporibus
+        iure esse ratione eum sequi tempora repellat neque voluptas nemo sed repudiandae nesciunt, perferendis itaque.
+        Fugiat amet atque accusantium mollitia quia magnam saepe architecto quod inventore ad? Distinctio laboriosam
+        earum dolor assumenda minus beatae nisi doloremque molestias atque, iusto totam numquam ab aliquid, nostrum
+        nulla sequi voluptates mollitia voluptas? Necessitatibus iste, voluptatibus, cumque magnam quas tempore a quidem
+        quasi eveniet suscipit veniam non unde alias veritatis, ducimus neque aspernatur obcaecati ullam iure! Fuga
+        perferendis perspiciatis vitae dolor magni, eaque ratione, deserunt laboriosam praesentium, repellendus iste
+        nihil itaque eveniet soluta!</p>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="footer-wrapper">
+      <section class="sec-1">
+        <div class="first-sec-1">
+          <div class="links"><a href="/contact.html">CONTACT US</a></div>
+          <div class="links"><a href="">REQUEST A BROCHURE</a></div>
+          <div class="links"><a href="">ABOUT EXODUS</a></div>
+          <div class="links"><a href="">OUR TRIPS</a></div>
+        </div>
+        <div class="second-sec-1">
+          <div class="links"><a href="">EXPERT BLOG</a></div>
+          <div class="links"><a href="">DESTINATIONS</a></div>
+          <div class="links"><a href="">CAREERS</a></div>
+        </div>
+      </section>
+      <hr>
+      <section class="sec-2">
+        <div class="first-sec-2">
+          <div class="sub-sec">
+            <a href="">Sustainable Travel</a>
+            <a href="">FAQs</a>
+            <a href="">Customer Key Rights</a>
+            <a href="">Loyalty Program</a>
+            <a href="">Travel Agents</a>
+          </div>
+          <div class="sub-sec">
+            <a href="">Insurance(US Residents)</a>
+            <a href="">Booking Conditions</a>
+            <a href="">Privacy Policy & Cookies</a>
+            <a href="">Customer Charter</a>
+            <a href="">Terms of Use</a>
+          </div>
+        </div>
+        <div class="second-sec-2">
+          <div class="sub-sec">
+            <a href="">Refer a Friend</a>
+            <a href="">Book Now, Pay Later</a>
+            <a href="">Exodus Fitness Guides</a>
+            <a href="">Exodus Travels Foundation</a>
+          </div>
+          <div class="sub-sec">
+            <a href="">Adventure Specialists</a>
+            <a href="">Post-Pandemic Travel</a>
+            <a href="">Do Not Sell my Personal Information</a>
+            <a href="">Travel – U.S. Department Of State</a>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="sec-3">
+        <div class="social-links">
+          <div class="links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+          <div class="copyright">© 2024 Exodus Travels Limited. All rights reserved.</div>
+        </div>
+        <div class="associations">
+          <img class="ass-img" src="./logos/nepal_gov.png" alt="not found">
+          <img class="ass-img" src="./logos/nma.png" alt="not found">
+          <img class="ass-img" src="./logos/ntb.webp" alt="not found">
+          <img class="ass-img" src="./logos/taan-logo.jpg" alt="not found">
+          <img class="ass-img" src="./logos/trip_adv.png" alt="not found">
+        </div>
+        <div class="copyright-2">© 2024 Exodus Travels Limited. All rights reserved. </div>
+      </section>
+    </div>
+  </footer>
+  <!-- footer end  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./nav/nav.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

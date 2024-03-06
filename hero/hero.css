@@ -29,7 +29,7 @@
 
 .carousel .list .item .content {
   position: absolute;
-  top: 20%;
+  bottom: 10%;
   width: 1140px;
   max-width: 80%;
   left: 50%;
@@ -43,11 +43,19 @@
   font-weight: bold;
   letter-spacing: 10px;
 }
-.carousel .list .item .title,
-.carousel .list .item .topic {
+.carousel .list .item .title {
   font-size: 5em;
   font-weight: bold;
   line-height: 1.3em;
+}
+.carousel .list .item .topic {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+.carousel .list .item .des {
+  font-size: 1.2em;
+  width: 420px !important;
 }
 .carousel .list .item .topic {
   color: #02fcd2;
@@ -294,12 +302,10 @@
     opacity: 0;
   }
 }
-@media screen and (max-width: 678px) {
+
+@media screen and (max-width: 820px) {
   .carousel .list .item .content {
-    padding-right: 0;
-  }
-  .carousel .list .item .content .title {
-    font-size: 30px;
+    top: 20%;
   }
 }
 
@@ -310,6 +316,14 @@
   .thumbnail .item {
     width: 150px;
     height: 200px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .carousel .list .item .content {
+    padding-right: 0;
+  }
+  .carousel .list .item .content .title {
+    font-size: 30px;
   }
 }
 
@@ -326,5 +340,9 @@
     font-size: 1em;
     font-weight: bold;
     line-height: 1.3em;
+  }
+  .carousel .list .item .des {
+    font-size: 1em;
+    width: 300px !important;
   }
 }
