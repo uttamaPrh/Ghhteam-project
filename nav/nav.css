@@ -68,6 +68,7 @@ nav {
   text-transform: uppercase;
   transition: all 0.2s ease;
   font-size: 1.2em;
+  /* font-size: 15px; */
 }
 
 .btn:hover {

@@ -1,11 +1,13 @@
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+/* * {
   --color-hr: #33333370;
-  overflow-x: hidden;
+ 
+} */
+
+* {
+  --nav-height: 100px;
+  --nav-width: 100vw;
+  --nav-bg-color: #fff;
+  --nav-hover-color: #02fcd2;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -13,9 +15,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-header {
-  font-size: 0.8em !important;
+hr {
+  background-color: #abb2b2 !important;
 }
+header {
+  font-size: 0.76em !important;
+}
+
 .search-menu-wrapper {
   color: white;
 }
@@ -93,7 +99,7 @@ footer {
 }
 
 .card-description h1 {
-  font-size: clamp(6rem, 4vw, 10rem);
+  font-size: clamp(2.5rem, 3vw, 8rem);
   margin: 0;
   line-height: 1;
   text-align: justify;
@@ -209,11 +215,6 @@ footer {
   width: 100%;
 }
 
-/* 
-body {
-  margin: 0;
-} */
-
 .columnsContainer {
   position: relative;
   margin: auto;
@@ -228,6 +229,33 @@ body {
 
 .leftColumn {
   margin-bottom: 0.5em;
+}
+.live-chat {
+  background-color: #6a64f1;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+}
+/* .about-container {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 1em;
+} */
+.booking-text {
+  color: black;
+  margin-top: 1rem;
+}
+.call-us-text {
+  margin: 0;
+}
+.call-number {
+  color: #6a64f1;
+  font-weight: bold;
+  margin-top: 0;
+  text-decoration: none;
+}
+.call-number-text {
+  text-decoration: none;
 }
 
 /* MEDIA QUERIES */
