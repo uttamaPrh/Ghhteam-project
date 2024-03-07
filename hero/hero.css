@@ -120,9 +120,12 @@
 }
 .thumbnail .item .content .title {
   font-weight: 500;
+  font-size: medium;
 }
 .thumbnail .item .content .description {
   font-weight: 300;
+  color: white;
+  text-align: start;
 }
 /* arrows */
 .arrows {

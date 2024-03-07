@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   --nav-height: 100px;
   --nav-width: 100vw;
   --nav-bg-color: #fff;
   --nav-hover-color: #02fcd2;
 }
+
 header {
   font-family: poppins;
   margin: 0;
@@ -40,10 +42,9 @@ nav {
 .nav-wrapper {
   height: inherit;
   width: var(--nav-width);
-  /* height: var(--nav-height); */
   height: 80px;
-  display: flex;
   padding: 0 30px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   color: black;
@@ -64,13 +65,11 @@ nav {
   height: 20px;
   width: 20px;
 }
-.nav-wrapper .menu .search svg:hover {
-  color: var(--nav-hover-color) !important;
-}
+
 header .btn {
-  color: gray;
   text-transform: uppercase;
   transition: all 0.2s ease;
+  /* font-size: 1.2em; */
   font-size: 15px;
   color: #5b6a6a;
   font-family: poppins !important;
@@ -106,6 +105,7 @@ header .btn {
 .search-menu-wrapper {
   position: absolute;
   top: 118px;
+
   width: var(--nav-width);
   display: flex;
   justify-content: center;
@@ -165,8 +165,8 @@ header .btn {
 
 .location-ph-number {
   font-size: 1.4em;
-  padding-right: 15px;
   color: #5b6a6a;
+  padding-right: 15px;
 }
 
 .accordion-body-contact {
@@ -175,11 +175,12 @@ header .btn {
   gap: 10px;
 }
 
-.btn a {
+a {
   text-decoration: none;
   color: inherit;
   text-decoration-color: none;
 }
+
 @media screen and (max-width: 1024px) {
   .nav-wrapper .logo img {
     height: 25px;

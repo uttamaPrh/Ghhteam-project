@@ -1,0 +1,144 @@
+* {
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  --color-dark-cool-gray: #373e3e;
+  --color-white: #fff;
+  --color-light-gray: #abb2b2;
+  --color-black: #000;
+  --color-hr: #33333370;
+}
+
+.destination-hero {
+  position: relative;
+  width: 100vw;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.destination-hero > img {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+}
+
+.destination-hero-text {
+  position: absolute;
+  /* top: 0; */
+  bottom: 20%;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.destination-hero-text > h1 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: bold;
+
+  width: fit-content;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.288);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumb-item {
+  color: rgb(114, 114, 255);
+  cursor: pointer;
+}
+
+.breadcrumb-nav {
+  width: 65%;
+  margin: 10px auto;
+}
+.activity-section {
+  margin: 10px auto;
+  width: 65%;
+  border: 1px solid var(--color-light-gray);
+  position: relative;
+  padding: 40px 0 30px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.activity-section fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.activity-section label,
+.activity-section legend {
+  color: var(--color-dark-cool-gray);
+}
+
+.activity-section legend {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: fit-content;
+  padding: 0 5px;
+}
+
+.activity {
+  background-color: var(--color-light-gray);
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: 0.1rem;
+  border-radius: 6px;
+  margin: 10px;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.activity:hover {
+  background-color: var(--color-dark-cool-gray);
+}
+
+/* max screen size airpod mini  */
+@media screen and (max-width: 768px) {
+  .destination-hero {
+    height: 350px;
+  }
+  .destination-hero-text > h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .breadcrumb-nav {
+    width: 90vw;
+  }
+  .activity-section {
+    width: 90vw;
+  }
+  .activity-section legend {
+    font-size: small;
+  }
+  .activity {
+    font-size: smaller;
+  }
+}
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+  .destination-hero {
+    height: 300px;
+  }
+  .destination-hero-text > h1 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}

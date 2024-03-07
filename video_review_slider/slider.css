@@ -9,8 +9,7 @@
 } */
 
 .slide-container {
-  max-width: 1120px;
-  width: 100%;
+  width: 80%;
   padding: 5px 0;
 }
 .slide-content {
@@ -18,13 +17,15 @@
   margin: auto 40px;
   overflow: hidden;
   border-radius: 16px;
-  height: 460px;
+  height: 470px;
   padding-top: 10px;
 }
 .card {
   border-radius: 8px;
   background-color: #fff;
   height: 450px;
+  width: 90%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.062);
 }
 .image-content,
 .card-content {
@@ -34,15 +35,16 @@
   padding: 5px 10px;
 }
 .image-content {
-  position: relative;
   row-gap: 5px;
   /* padding: 25px 0; */
 }
 
 .card-image {
-  position: relative;
-  width: inherit;
+  /* outline: 1px solid red; */
+  width: 445px;
   height: auto;
+  object-fit: cover;
+
   /* padding: 1px; */
 }
 .card-image .card-img {
@@ -86,6 +88,12 @@
 }
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
+}
+
+@media screen and (max-width: 1919px) {
+  .card-image {
+    width: 345px;
+  }
 }
 
 @media screen and (max-width: 768px) {
