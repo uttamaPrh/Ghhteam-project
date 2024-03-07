@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   --nav-height: 100px;
   --nav-width: 100vw;
   --nav-bg-color: #fff;
   --nav-hover-color: #02fcd2;
 }
-
 header {
+  font-family: poppins;
   margin: 0;
   position: fixed;
   top: 0;
@@ -39,15 +40,17 @@ nav {
 .nav-wrapper {
   height: inherit;
   width: var(--nav-width);
-  height: var(--nav-height);
+  /* height: var(--nav-height); */
+  height: 80px;
   display: flex;
-  justify-content: space-around;
+  padding: 0 30px;
+  justify-content: space-between;
   align-items: center;
   color: black;
 }
 
 .nav-wrapper .logo img {
-  height: 50px;
+  height: 40px;
 }
 
 .nav-wrapper .menu {
@@ -58,17 +61,20 @@ nav {
 
 .nav-wrapper .menu .search svg {
   margin-left: 20px;
-  color: black;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
 }
-
-.btn {
-  color: black;
+.nav-wrapper .menu .search svg:hover {
+  color: var(--nav-hover-color) !important;
+}
+header .btn {
+  color: gray;
   text-transform: uppercase;
   transition: all 0.2s ease;
-  font-size: 1.2em;
-  /* font-size: 15px; */
+  font-size: 15px;
+  color: #5b6a6a;
+  font-family: poppins !important;
+  font-weight: 600 !important;
 }
 
 .btn:hover {
@@ -99,8 +105,7 @@ nav {
 
 .search-menu-wrapper {
   position: absolute;
-  top: 140px;
-
+  top: 118px;
   width: var(--nav-width);
   display: flex;
   justify-content: center;
@@ -161,6 +166,7 @@ nav {
 .location-ph-number {
   font-size: 1.4em;
   padding-right: 15px;
+  color: #5b6a6a;
 }
 
 .accordion-body-contact {
@@ -173,6 +179,19 @@ nav {
   text-decoration: none;
   color: inherit;
   text-decoration-color: none;
+}
+@media screen and (max-width: 1024px) {
+  .nav-wrapper .logo img {
+    height: 25px;
+  }
+  header .btn {
+    font-size: 12px;
+    font-weight: 600 !important;
+  }
+  .search-menu-wrapper svg {
+    height: 18px;
+    width: 18px;
+  }
 }
 
 @media screen and (max-width: 820px) {
